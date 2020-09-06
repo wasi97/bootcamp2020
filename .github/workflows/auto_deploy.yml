@@ -29,6 +29,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: installing serge
         run: npm install --global surge
-        name: deploy using serge
+      -  name: deploy using serge
         run: surge ./ wasi-class.surge.sh --token ${{ secrets.surge_token }}
         
